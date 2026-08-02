@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The secret to making a great power system — The Pixel Corner</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="progress-bar" id="progress-bar"></div>
+    <div class="sunlight"></div>
+    <header class="site-header site-header--minimal">
+      <div class="container">
+        <a href="index.html" class="site-logo">The Pixel Corner</a>
+      </div>
+    </header>
+    <main class="container article-container">
+      <article class="article">
+        <header class="article-header">
+          <div class="hero-bg"></div>
+          <div class=" menacing menacing-left">
+            <img src="https://i.imgur.com/2O7lEh4.gif">
+          </div>
+          <div class="menacing menacing-right">
+            <img src="https://i.imgur.com/2O7lEh4.gif">
+          </div>
+          <div class="stars">
+              <span class="star s1"></span>
+              <span class="star s2"></span>
+              <span class="star s3"></span>
+              <span class="star s4"></span>
+              <span class="star s5"></span>
+              <span class="star s6"></span>
+              <span class="star s7"></span>
+              <span class="star s8"></span>
+              <span class="star s9"></span>
+              <span class="star s10"></span>
+              <span class="star s11"></span>
+              <span class="star s12"></span>
+              <span class="star s13"></span>
+              <span class="star s14"></span>
+              <span class="star s15"></span>
+              <span class="star s16"></span>
+              <span class="star s17"></span>
+              <span class="star s18"></span>
+              <span class="star s19"></span>
+              <span class="star s20"></span>
+          </div>
+          <div class="hero-content">
+            <div class="article-category">
+              GAME DESIGN • ANIME
+            </div>
+            <h1>The secret to making a great power system</h1>
+            <p class="article-subtitle">
+              What JoJo's Bizarre Adventure can teach us about designing powers in modern entertainment.
+            </p>
+            <div class="article-byline">
+              <!-- <img
+                class="author-avatar author-avatar--small"
+                src="https://api.dicebear.com/7.x/notionists/svg?seed=Jordan"
+                alt="Jordan Lee"
+                width="48"
+                height="48"
+              /> -->
+              <!-- <div>
+                <span class="author-name">Jordan Lee</span>
+                <span class="article-meta">
+                  <time datetime="2026-06-03">Jun 3, 2026</time>
+                  · 6 min read
+                </span>
+              </div> -->
+            </div>
+          </header>
+
+          <div class="scroll-down">
+            ▼ SCROLL ▼
+          </div>
+        </div>
+        <div class="article-body">
+          <p>
+            <span class="dropcap-phrase">"Catch it!"</span> he yells as the ancient vial containing the only remnant of the potion 
+            falls from the helicopter, and the main character catches it and drinks it to gain 
+            the "All killer beam". He then proceeds to kill every last one of the aliens with 
+            ease after almost dying fighting one of the alien henchmen. 
+          </p>
+
+          <p>
+            Amazing right? When it looked like all hope was lost, the hero swoops in 
+            and saves the day by pure luck of the vial falling right to him. When I was younger, 
+            this felt like the perfect ending. The tension had been building for hours, and
+            finally the hero gets the power he needs to save everyone. Looking back now, 
+            though, one question always comes to mind: "Does this ending really do justice to 
+            all the effort the characters put in?"
+          </p>
+
+          <p>
+            More often than not, the answer to this question seems to be no. I mean, why did 
+            the main character dedicate his whole life to learning and becoming one of the 
+            strongest just to get saved by luck? Was there any meaning to watching the 
+            entire show if the none of his character development and powers even mattered in 
+            the end. If you don't wanna fall into that trap, and learn how to make an actually 
+            good power system, you're at the right place! 
+          </p>
+
+          <h2>Rules and Limitations</h2>
+
+          <p>
+            A good power system needs rules and limitations. Set rules are what make 
+            the difference between creativity being the limit and plot armor having to 
+            save the day. A great example of a grounded and limited power system from 
+            JoJo's Bizarre Adventure is Hamon. 
+          </p>
+          <div class="hamon-section" id="hamon">
+            <h4>Hamon</h4>
+
+            <p>
+              Hamon is a martial arts power system controlled by breathing techniques that 
+              generate and allow for the manipulation of the same energy as the sun.
+            </p>
+            <div class="hamon-flash"></div>
+            <div class="hamon-scene-wrapper">
+              <div class="hamon-training-container">
+                <div class="joseph-scene">
+                  <div class="breathing-overlay">
+                    <div class="breath-ring ring1"></div>
+                    <div class="breath-ring ring2"></div>
+                    <div class="breath-ring ring3"></div>
+                  </div>
+                  <img 
+                    src="https://i.imgur.com/CmubxnX.gif" class="joseph-idle" id="joseph">
+                  <img
+                    src="https://i.imgur.com/HIgnNHk.gif" class="joseph-hamon" id="hamon-joseph">
+                </div>
+
+                <div class="hamon-training">
+                  <h3>☀ HAMON TRAINING ☀</h3>
+                  <p>
+                    Hamon begins with controlled breathing.
+                    Try it yourself.
+                  </p>
+                  <button id="hamon-btn">
+                    Begin Breathing
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              It looks cool right? This may sound like an overpowered or easily exploited  
+              system, but it has many limitations and rules Which I will list below:
+            </p>
+
+            <ul>
+              <li>The breathing technique needs to be controlled and focused on heavily in order to use Hamon</li>
+              <li>Its use cases are niche as it is mainly effective against enemies like vampires and the pillar men who are weak to the sun</li>
+              <li>It can only be channeled through extremities (hands and legs)</li>
+              <li>It is weak and requires incredible amount of energy to use unless channeled through something else like Lisa Lisa's scarf or Joseph's cracker balls</li>
+            </ul><br>
+
+            <p>
+              The reason these kinds of limitations and rules make Hamon a good power system
+              is because it forces the users to get creative with how they use it. Joseph 
+              Joestar fights so many different enemies in part 2 of the show and each fight
+              is resolved through different types of creative use of Hamon. That makes every
+              episode in part 2 feel unexpected and unique as the power system which seems so
+              limited is used to its fullest potential. What also makes it interesting is That  
+              no one Hamon user uses Hamon the same way. To give you some examples, there's a
+              character who channels his Hamon through bubble based attacks and a character
+              who channels it through her scarf. This leads us onto the next thing that makes
+              a great power system: Individuality
+            </p>
+          </div>
+
+          <h2>Individuality</h2>
+
+          <p>
+            Individuality is one of the core identities of the JoJo's power system. As we
+            stated above, the use of Hamon by each person was so unique that it felt like
+            each person was using their own different power up when it was just creativity
+            of the user. This takes a whole new step from part 2 and onwards when the power
+            shifts to Stands.
+          </p>
+
+          
+          <h4>Stands</h4>
+
+          <p>
+          The concept of Stands is that every character gets their own unique ability.
+          But unlike Hamon, Stands are not learned through training.
+          They are awakened.
+          </p>
+
+          <section class="stand-section">
+
+            <div class="stand-awakening">
+              <p>
+              Every Stand begins with an arrow.
+              Those who survive being pierced by the Stand Arrow awaken a power unlike anyone else.
+              </p>
+              <div class="stand-arrow">
+                <img src="https://i.imgur.com/tJOoJxm.png">
+              </div>
+              <button id="arrow-btn">
+                Pierce Yourself
+              </button>
+            </div>
+
+            <div class="stand-flash"></div>
+            <div class="stand-selection hidden">
+              <h3>
+              Your Stand has awakened...
+              </h3>
+
+
+              <div class="stand-cards">
+
+
+                <div class="stand-card" data-stand="star">
+                  <img src="https://i.imgur.com/XgI1g9l.png">
+                  <h3>Star Platinum</h3>
+                </div>
+
+
+                <div class="stand-card" data-stand="world">
+                  <img src="https://i.imgur.com/okSDhp8.png">
+                  <h3>The World</h3>
+                </div>
+
+
+                <div class="stand-card" data-stand="chariot">
+                  <img src="https://i.imgur.com/aNjLzJX.png">
+                  <h3>Silver Chariot</h3>
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+            <div class="stand-detail hidden">
+
+              <button id="stand-back">
+              ← Back
+              </button>
+
+              <div class="stand-info-card">
+                <h2 id="stand-name"></h2>
+
+                <div id="stand-stats"></div>
+
+
+                <button id="attack-btn">
+                Attack
+                </button>
+              </div>
+              <div class="stand-character hidden">
+
+                <img id="stand-idle">
+
+                <img id="stand-attack">
+
+              </div>
+
+
+            </div>
+
+
+          </section>
+
+          <p> 
+            No two stands are the same, and each
+            stand has its strengths and weaknesses. These strengths and weaknesses are what
+            present the rules and limitations with stands. For example, we have Jotaro Kujo's
+            stand which is one of the strongest physical stands, but its limitation is that
+            its range is very short and it gets significantly weaker the farther away it is from
+            Jotaro.
+          </p>
+
+          <p>
+            These limitations paired with the unique abilities that each stand provides makes
+            for extremely interesting fights and puzzle solving. For example, the final fight 
+            in part 4, Diamond is unbreakable is between Josuke and Kira. Josuke's stand, 
+            Crazy Diamond is extremely strong in close range and has the ability to
+            repair/heal anything, but its range is only 2 meters and it can't heal Josuke. Kira's 
+            stand on the other hand, Killer Queen turns anything it touches into a bomb, can create 
+            a long range heat tracking bomb, and even create a tiny bomb that spies on individuals. 
+            On paper, its abilities seem completely different from Crazy Diamond's. Yet the final 
+            battle works because both Stands have clear strengths and limitations rather than one 
+            simply being "better."
+          </p>
+
+          <h2>Creativity over Strength</h2>
+
+          <p>
+            A common misconception is that a good power system needs powerful abilities.
+            In reality, the most memorable powers are often the ones that use creativity 
+            to make the most out of any power it proposes.
+          </p>
+
+          <p>
+            There are numerous other stands that have seemingly weird and
+            useless abilities that are used very creatively and in the right situations.
+            One example is Survivor, which is a stand whose only ability is to make people
+            around it very aggressive and angry. Extremely chaotic, that could be bad for
+            even the user themself, but it is used very cleverly in part 6. Another famous
+            stand that has an odd ability is Sticky Fingers whose ability is to create zippers
+            on anything. Sound kinda useless, but Bucciaratti, the owner of the stand uses it
+            for hiding, separating body parts, moving through surfaces, and much more. Isn't 
+            it crazy to think that Unique and unexpected abilities make for a great power system?
+            Yeah, but just that wasn't what made it great.
+          </p>
+
+          <div class="puzzle-section" id="puzzle">
+            <h3 class="puzzle-heading">Try it yourself</h3>
+            <p class="puzzle-intro">
+              Here are two "useless" Stand abilities. Before you scroll, think about
+              how you'd actually use them.
+            </p>
+
+            <div class="puzzle-cards">
+              <div class="puzzle-card" data-puzzle="survivor">
+                <h4>Survivor</h4>
+                <p class="puzzle-ability">
+                  Ability: makes everyone nearby more aggressive and angry.
+                </p>
+                <p class="puzzle-question">How could this ever be useful?</p>
+                <button class="puzzle-reveal-btn">Reveal Answer</button>
+                <ul class="puzzle-answer hidden">
+                  <li>Start a prison riot</li>
+                  <li>Distract stronger enemies</li>
+                  <li>Force opponents to attack each other</li>
+                  <li>Create chaos while escaping</li>
+                </ul>
+              </div>
+
+              <div class="puzzle-card" data-puzzle="sticky">
+                <h4>Sticky Fingers</h4>
+                <p class="puzzle-ability">
+                  Ability: creates zippers on anything it touches.
+                </p>
+                <p class="puzzle-question">What could you do with this?</p>
+                <button class="puzzle-reveal-btn">Reveal Answer</button>
+                <ul class="puzzle-answer hidden">
+                  <li>Hide inside walls</li>
+                  <li>Separate body parts</li>
+                  <li>Make portals through objects</li>
+                  <li>Escape restraints instantly</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="puzzle-footnote">
+              Neither ability sounds strong on paper. Used with intent, both become
+              devastating. That's the whole point of a creativity-driven power system.
+            </p>
+          </div>
+
+          <h2>Conclusion</h2>
+
+          <p>
+            Well, after reading all that, what is it that actually makes a great power system?
+            If you ask me, it's one that has rules and limitations that push the characters to
+            have to use their powers in unique ways and discourage exploiting systems that allow
+            characters to find easy ways out. Standing by the power system that was designed with
+            so much thought and figuring out the best way to use it without having to break the
+            rules of it will make your power system just that much cooler and stronger. JoJo's
+            stands out because of this very reason.
+          </p>
+
+          <p>
+            Think about the hero from the beginning. Imagine instead that he defeats the final
+            villain using the skills he's spent the entire story mastering, exploiting the 
+            limitations of both his own powers and the enemy's. Now that doesn't feel lucky
+            anymore, it feels fulfilling and earned making the ending that much better.
+
+          </p>
+
+          <p>
+            When you go out there and create your own power system think of it from different
+            angles rather than the usual, "who is stronger" or "how do i make the coolest
+            and most overpowered character?" Instead think about "how can i bound this power
+            so it seems more fair and makes for more interesting fights and usage scenarios?"
+            and "what could make this power weak to the enemy while also giving it a unique edge
+            over the enemy?" These kinda of questions will automatically elevate your power 
+            system and make it much more interesting to engage with.
+          </p>
+
+          <div class="power-builder" id="power-builder">
+            <h3 class="builder-heading">Design Your Own Power</h3>
+            <p class="builder-intro">
+              Now that you know how to build a great power system, I think it's time
+              to put your learning to the test. Build your own power!
+            </p>
+
+            <div class="builder-step" id="builder-step-1">
+              <h4 class="builder-step-title">Step 1: Choose an ability</h4>
+              <div class="builder-options" data-step="ability">
+                <button class="builder-option" data-value="Fire">Fire</button>
+                <button class="builder-option" data-value="Ice">Ice</button>
+                <button class="builder-option" data-value="Gravity">Gravity</button>
+                <button class="builder-option" data-value="Sound">Sound</button>
+                <button class="builder-option" data-value="Time">Time</button>
+              </div>
+            </div>
+
+            <div class="builder-step hidden" id="builder-step-2">
+              <h4 class="builder-step-title">Step 2: Choose a limitation</h4>
+              <div class="builder-options" data-step="limitation">
+                <button class="builder-option" data-value="Only works at night">Only works at night</button>
+                <button class="builder-option" data-value="Uses the user's own lifespan">Uses the user's own lifespan</button>
+                <button class="builder-option" data-value="Must physically touch the target">Must physically touch the target</button>
+                <button class="builder-option" data-value="Requires controlled breathing">Requires controlled breathing</button>
+                <button class="builder-option" data-value="Needs several seconds of preparation">Needs several seconds of preparation</button>
+              </div>
+            </div>
+
+            <div class="builder-result hidden" id="builder-result">
+              <h4 class="builder-step-title">Your power system</h4>
+              <div class="builder-result-card">
+                <p><span class="builder-label">Ability:</span> <span id="result-ability"></span></p>
+                <p><span class="builder-label">Limitation:</span> <span id="result-limitation"></span></p>
+                <p class="builder-rating">★★★★★</p>
+                <p class="builder-verdict">
+                  That's a great choice. It's sure to present a lot of
+                  tension and is sure to make fights way more interesting
+                  than being saved by plot armor.
+                </p>
+              </div>
+              <button class="builder-restart" id="builder-restart">Try another combo</button>
+            </div>
+          </div>
+        </div>
+
+        <footer class="article-footer">
+          <p class="article-thanks">Thanks for reading The Pixel Corner.</p>
+          <a href="index.html" class="back-link">← Back to all posts</a>
+
+        
+        </footer>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 · <a href="index.html">The Pixel Corner</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
